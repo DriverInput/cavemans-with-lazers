@@ -1,3 +1,4 @@
 C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53Content\obj\x86\Debug\miniLD-53Content.contentprojResolveAssemblyReference.cache
 C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53Content\obj\x86\Debug\miniLD-53Content.contentprojResolveAssemblyReference.cache
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53Content\obj\x86\Debug\miniLD-53Content.contentprojResolveAssemblyReference.cache
+C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53Content\obj\x86\Debug\miniLD-53Content.contentprojResolveAssemblyReference.cache
