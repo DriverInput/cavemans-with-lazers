@@ -52,3 +52,5 @@ C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\mini
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.exe
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.pdb
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb
+C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\bullet.xnb
+C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Font.xnb

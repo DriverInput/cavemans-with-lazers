@@ -18,7 +18,8 @@ namespace miniLD_53
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        SpriteFont font;
+        
         enum GameState
         {
             mainMenu,
@@ -28,6 +29,9 @@ namespace miniLD_53
         GameState currentGameState = GameState.mainMenu;
 
         int screenWidth = 800, screenHeight = 600;
+        int Score;
+        Rectangle bullet1 = new Rectangle(-40, -40, 8, 3);
+        Rectangle bullet2 = new Rectangle(-40, -40, 8, 3);
 
         Button button;
         Map map;
@@ -49,8 +53,8 @@ namespace miniLD_53
         protected override void Initialize()
         {
             map = new Map();
-            player1 = new Player( new Vector2(128, 32));
-            player2 = new Player(new Vector2(128*4, 32));
+            player1 = new Player(new Vector2(128, 32), Content.Load<Texture2D>("Bullet"), bullet1);
+            player2 = new Player(new Vector2(128 * 4, 32), Content.Load<Texture2D>("Bullet"), bullet2);
 
             base.Initialize();
         }
@@ -64,6 +68,8 @@ namespace miniLD_53
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            font = Content.Load<SpriteFont>("Font");
+
             graphics.PreferredBackBufferWidth = screenWidth;
             graphics.PreferredBackBufferHeight = screenHeight;
             graphics.ApplyChanges();
@@ -75,7 +81,7 @@ namespace miniLD_53
             Tiles.Content = Content;
 
             map.Generate(new int[,]{
-{1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3},
 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4},
@@ -136,8 +142,10 @@ namespace miniLD_53
                 player1.Collision(tile.Rectangle, map.Width, map.Height);
                 player2.Collision(tile.Rectangle, map.Width, map.Height);
             }
-          
-           base.Update(gameTime);
+
+            Score++;
+
+            base.Update(gameTime);
         }
 
         /// <summary>
@@ -147,9 +155,10 @@ namespace miniLD_53
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+                        Vector2 text = new Vector2(10, 10);
 
             spriteBatch.Begin();
-            switch(currentGameState)
+            switch (currentGameState)
             {
                 case GameState.mainMenu:
                     spriteBatch.Draw(Content.Load<Texture2D>("MainMenu"), new Rectangle(0, 0, screenWidth, screenHeight), Color.White);
@@ -158,11 +167,12 @@ namespace miniLD_53
 
                 case GameState.Playing:
                     spriteBatch.Draw(Content.Load<Texture2D>("Background"), new Rectangle(0, 0, screenWidth, screenHeight), Color.White);
-            map.Draw(spriteBatch);
-            player1.draw(spriteBatch);
-            player2.draw(spriteBatch);
-            break;
-        }
+                    map.Draw(spriteBatch);
+                    spriteBatch.DrawString(font, "Score: " + Score, text, Color.White);
+                    player1.draw(spriteBatch);
+                    player2.draw(spriteBatch);
+                    break;
+            }
             spriteBatch.End();
             base.Draw(gameTime);
         }

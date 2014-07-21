@@ -100,6 +100,24 @@
       <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
       <Time>2014-07-21T21:39:21.6241014+02:00</Time>
     </Item>
+    <Item>
+      <Source>bullet.png</Source>
+      <Name>bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\bullet.xnb</Output>
+      <Time>2014-07-21T19:34:27.6687967+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Font.spritefont</Source>
+      <Name>Font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Font.xnb</Output>
+      <Time>2014-07-22T00:16:27.0192031+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

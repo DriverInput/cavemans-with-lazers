@@ -9,3 +9,5 @@ Content\Tile4.xnb
 Content\Background.xnb
 Content\MainMenu.xnb
 Content\Button.xnb
+Content\bullet.xnb
+Content\Font.xnb

@@ -21,13 +21,30 @@ namespace miniLD_53
         public float elapsed;
         public float delay = 200f;
         public sbyte frames = 1;
+        public int dir;
 
         public sbyte speed = 5;
 
         private bool hasJumped = false;
         public bool isMoving;
 
-        public Player(Vector2 newPos) { position = newPos; }
+        public bool IsShooting;
+        Texture2D bulletTexture;
+        public Rectangle bulletRectangle;
+
+        List<Bullets> bullets;
+
+        int timeBetweenShots = 300;
+        int shotTimer = 0;
+
+        public Player(Vector2 newPos, Texture2D newBulletTexture, Rectangle newBulletRectangle)
+        {
+            position = newPos;
+            bulletTexture = newBulletTexture;
+            bulletRectangle = newBulletRectangle;
+
+            bullets = new List<Bullets>();
+        }
 
         public void Update(GameTime gameTime, sbyte ctr)
         {
@@ -35,7 +52,29 @@ namespace miniLD_53
             rectangle = new Rectangle((int)position.X, (int)position.Y, (int)32, 64);
 
             movement(gameTime, ctr);
+            bulletRectangle.X = (int)position.X;
+            bulletRectangle.Y = (int)position.Y;
+            
+            if (IsShooting)
+            {
+                shotTimer += gameTime.ElapsedGameTime.Milliseconds;
+
+                if (shotTimer > timeBetweenShots)
+                {
+                    shotTimer = 0;
+
+                    Bullets b = new Bullets(bulletTexture, bulletRectangle, dir * 10, position);
+
+                    bullets.Add(b);
+                }
+            }
+
+            for (int i = 0; i < bullets.Count; i++)
+            {
+                bullets[i].update();
+            }
         }
+
 
         public void Load(ContentManager Content, sbyte playerNumber)
         {
@@ -56,7 +95,8 @@ namespace miniLD_53
                     frames++;
                     if (frames > 4)
                         frames = 1;
-                } else {frames = 0;}
+                }
+                else { frames = 0; }
                 elapsed = 0;
             }
 
@@ -66,6 +106,10 @@ namespace miniLD_53
         public void draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(currentAnimation, rectangle, sourceRectangle, Color.White);
+            foreach (Bullets b in bullets)
+            {
+                b.draw(spriteBatch);
+            }
         }
 
         public void Collision(Rectangle newRectangle, int xOffset, int yOffset)
@@ -106,6 +150,7 @@ namespace miniLD_53
                         currentAnimation = leftWalk;
                         Animate(gameTime);
                         isMoving = true;
+                        dir = -1;
                     }
                     else if (Keyboard.GetState().IsKeyDown(Keys.Right))
                     {
@@ -113,6 +158,7 @@ namespace miniLD_53
                         currentAnimation = rightWalk;
                         Animate(gameTime);
                         isMoving = true;
+                        dir = 1;
                     }
                     else
                     {
@@ -125,18 +171,22 @@ namespace miniLD_53
                         velocity.Y = -10f;
                         hasJumped = true;
                     }
+                    if (Keyboard.GetState().IsKeyDown(Keys.LeftControl))
+                    { IsShooting = true; }
+                    else { IsShooting = false; }
 
                     if (velocity.Y < 10)
                         velocity.Y += 0.5f;
-                break;
+                    break;
 
                 case 2:
-                     if (Keyboard.GetState().IsKeyDown(Keys.A))
+                    if (Keyboard.GetState().IsKeyDown(Keys.A))
                     {
                         velocity.X = -speed;
                         currentAnimation = leftWalk;
                         Animate(gameTime);
                         isMoving = true;
+                        dir = -1;
                     }
                     else if (Keyboard.GetState().IsKeyDown(Keys.D))
                     {
@@ -144,6 +194,7 @@ namespace miniLD_53
                         currentAnimation = rightWalk;
                         Animate(gameTime);
                         isMoving = true;
+                        dir = 1;
                     }
                     else
                     {
@@ -156,12 +207,15 @@ namespace miniLD_53
                         velocity.Y = -10f;
                         hasJumped = true;
                     }
+                    if (Keyboard.GetState().IsKeyDown(Keys.Space))
+                    { IsShooting = true; }
+                    else { IsShooting = false; }
 
                     if (velocity.Y < 10)
                         velocity.Y += 0.5f;
-                break;
+                    break;
             }
         }
-        
+
     }
 }
