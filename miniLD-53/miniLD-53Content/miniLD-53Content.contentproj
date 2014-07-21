@@ -54,18 +54,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button.jpg">
-      <Name>Button</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="MainMenu.jpg">
-      <Name>MainMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Tile3.png">
       <Name>Tile3</Name>
       <Importer>TextureImporter</Importer>
@@ -104,6 +92,20 @@
   <ItemGroup>
     <Compile Include="Background.png">
       <Name>Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainMenu.png">
+      <Name>MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Button.png">
+      <Name>Button</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

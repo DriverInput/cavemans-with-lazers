@@ -38,7 +38,6 @@ C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Con
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb
-C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile3.xnb
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture1.xnb
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture2.xnb
@@ -52,3 +51,4 @@ C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\mini
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.exe
 C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.pdb
+C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb

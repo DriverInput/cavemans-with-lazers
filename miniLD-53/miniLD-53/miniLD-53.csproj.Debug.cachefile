@@ -1,7 +1,5 @@
 Content\Tile1.xnb
 Content\Tile2.xnb
-Content\Button.xnb
-Content\MainMenu.xnb
 Content\Tile3.xnb
 Content\LeftTexture1.xnb
 Content\LeftTexture2.xnb
@@ -9,3 +7,5 @@ Content\RightTexture1.xnb
 Content\RightTexture2.xnb
 Content\Tile4.xnb
 Content\Background.xnb
+Content\MainMenu.xnb
+Content\Button.xnb

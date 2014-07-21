@@ -20,24 +20,6 @@
       <Time>2014-07-21T00:49:15.5673542+02:00</Time>
     </Item>
     <Item>
-      <Source>Button.jpg</Source>
-      <Name>Button</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
-      <Time>2014-07-20T23:52:40.3151568+02:00</Time>
-    </Item>
-    <Item>
-      <Source>MainMenu.jpg</Source>
-      <Name>MainMenu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb</Output>
-      <Time>2014-03-31T20:38:56.4205978+02:00</Time>
-    </Item>
-    <Item>
       <Source>Tile3.png</Source>
       <Name>Tile3</Name>
       <Importer>TextureImporter</Importer>
@@ -99,6 +81,24 @@
       <Options>None</Options>
       <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Background.xnb</Output>
       <Time>2014-07-21T19:53:42.1748306+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MainMenu.png</Source>
+      <Name>MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb</Output>
+      <Time>2014-07-21T21:35:57.0023977+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Button.png</Source>
+      <Name>Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\CaveManWithLaserGuns\cavemans-with-lazers\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
+      <Time>2014-07-21T21:39:21.6241014+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
